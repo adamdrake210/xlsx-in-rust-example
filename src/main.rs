@@ -44,7 +44,7 @@ async fn report_handler() -> Result<impl Reply> {
 
 fn create_things() -> Vec<Thing> {
     let mut result: Vec<Thing> = vec![];
-    for _ in 0..1000 {
+    for _ in 0..100 {
         result.push(Thing {
             id: random_string(),
             start_date: Utc::now(),
